@@ -9,8 +9,9 @@ Repositório responsável por persistir os verbos HTTP's (GET, POST, DELETE, PUT
 - **[Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=cosmosdbserverless-github-gllemos)**
 - **[Node.js](https://nodejs.org/en/)**
 - **[Extensão Visual Studio Code: Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=cosmosdbserverless-github-gllemos)**
-- Mongodb Community Server **[DOWNLOAD AQUI](https://www.mongodb.com/download-center/community)**
-- MongodB Compass GUI **[DOWNLOAD AQUI](https://www.mongodb.com/download-center/compass)**
+- **[Azure CosmosDb](https://azure.microsoft.com/services/cosmos-db/?WT.mc_id=cosmosdbserverless-github-gllemos)**
+-  **[Mongodb Community Server](https://www.mongodb.com/download-center/community)**
+- **[MongodB Compass GUI](https://www.mongodb.com/download-center/compass)**
 - **[Conta Azure - Conta Gratuita](https://azure.microsoft.com/free/?WT.mc_id=cosmosdbserverless-github-gllemos)**
 
 ## Conta - Azure for Students ⭐️
@@ -56,6 +57,8 @@ Durante o workshop, comentei sobre importantes documentações, links e recursos
 - ✅ **[Extensão Vs Code – Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=cosmosdbserverless-github-gllemos)**
 - ✅ **[E-Book Grátis - Azure Serverless Computing Cookbook](https://azure.microsoft.com/pt-br/resources/azure-serverless-computing-cookbook/?WT.mc_id=cosmosdbserverless-github-gllemos)**
 - ✅ **[Cursos Grátis - Azure Functions](https://docs.microsoft.com/pt-br/learn/paths/create-serverless-applications/?WT.mc_id=cosmosdbserverless-github-gllemos)**
+- ✅ **[Cursos Grátis - Azure CosmosDb](https://docs.microsoft.com/learn/browse/?term=cosmos&WT.mc_id=cosmosdbserverless-github-gllemos)**
+- **[Tutorial de Azure CosmosDb & Node.js](https://docs.microsoft.com/azure/cosmos-db/sql-api-nodejs-get-started?WT.mc_id=cosmosdbserverless-github-gllemos)**
 
 ## Dúvidas?! ❗️❗️
 
