@@ -82,6 +82,42 @@
       "};"
     ],
     "description": "Snippet responsável por criar um novo 'Funcionário' via CosmosDb"
+  },
+  "Snippet arquivo responsável por listar Funcionarios via CosmosD": {
+    "prefix": "cosmos-serverless-list",
+    "body": [
+      "const conn = require(\"../shared/databaseCosmosDb\");",
+      "const handleError = require(\"../shared/error\");",
+      "",
+      "module.exports = context => {",
+      "  conn",
+      "    .connect()",
+      "    .then(client => {",
+      "      query(client);",
+      "    })",
+      "    .catch(err => handleError(500, err, context));",
+      "",
+      "    const query = client => {",
+      "    const database = client.db(\"crud-serverless-wavy\");",
+      "",
+      "    database",
+      "      .collection(\"funcionarios\")",
+      "      .find()",
+      "      .toArray()",
+      "      .then(res => {",
+      "        context.log(\"Retornando todos os funcionários com sucesso!\");",
+      "        res.forEach(funcionario => delete funcionario._id);",
+      "",
+      "        context.res = {",
+      "          status: 200,",
+      "          body: res",
+      "        };",
+      "        context.done();",
+      "      })",
+      "      .catch(err => handleError(500, err.stack, context));",
+      "  };",
+      "};"
+    ],
+    "description": "Snippet arquivo responsável por listar Funcionarios via CosmosD"
   }
-
 }
