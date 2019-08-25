@@ -29,10 +29,30 @@ Aqui ensino como você pode persistir um dado usando o HTTP Trigger, via POST di
 ```bash
 > npm i -g azure-functions-core-tools --unsafe-perm true
 ```
+2. Crie na raiz principal do projeto o arquivo: `local.settings.json` e inclua o seguinte bloco de código, alterando as chaves da sua conexão com o CosmosDb:
 
-2. Execute o MongoDb ou MongoDb Compass!
+```json
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "CosmosDbUrl": "<url-do-cosmosdb>",
+    "CosmosDBUser": "<user-da-conexao-cosmosdb>",
+    "CosmosDBPassword": "<senha-da-conexao-cosmosdb>",
+    "MongoDBLocalUrl": "<url-conexao-mongodb-local>"
+  },
+  "Host": {
+    "LocalHttpPort": 7071,
+    "CORS": "*"
+  }
+}
 
-3. Agora, abre novamente o seu prompt de comando e execute o comando:
+```
+
+3. Execute o MongoDb ou MongoDb Compass!
+
+4. Agora, abre novamente o seu prompt de comando e execute o comando:
 
 ```bash
 > func host start
