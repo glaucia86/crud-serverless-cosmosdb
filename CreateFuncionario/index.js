@@ -20,7 +20,6 @@ module.exports = (context, req) => {
 
   const query = client => {
     let funcionario = ({
-      id,
       nomeFuncionario,
       cargo,
       numeroIdentificador
@@ -31,7 +30,6 @@ module.exports = (context, req) => {
     database
       .collection("funcionarios")
       .insertOne({
-        id: funcionario.id,
         nomeFuncionario: funcionario.nomeFuncionario,
         cargo: funcionario.cargo,
         numeroIdentificador: funcionario.numeroIdentificador
