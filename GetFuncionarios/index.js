@@ -28,7 +28,6 @@ module.exports = context => {
       .toArray()
       .then(res => {
         context.log("Retornando todos os funcionários com sucesso!");
-        res.forEach(funcionario => delete funcionario._id);
 
         context.res = {
           status: 200,
