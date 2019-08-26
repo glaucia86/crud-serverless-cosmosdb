@@ -6,14 +6,13 @@
  * Author: Glaucia Lemos
  */
 
-module.exports = {
-  handleError: (status, message, context) => {
-    context.res = {
-      status: status,
-      body: message
-    };
+module.exports = function handleError (status, message, context) {
+  context.res = {
+    status: status,
+    body: message
+  };
 
-    context.done();
-  }
-};
+  context.done();
+}
+
 
