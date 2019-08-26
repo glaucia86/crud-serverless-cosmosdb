@@ -6,13 +6,9 @@
  * Author: Glaucia Lemos
  */
 
-module.exports = function handleError (status, message, context) {
+module.exports = async function handleError (status, message, context) {
   context.res = {
     status: status,
     body: message
   };
-
-  context.done();
 }
-
-
