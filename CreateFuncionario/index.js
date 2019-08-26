@@ -10,45 +10,24 @@
 const conn = require("../shared/databaseCosmosDb");
 const handleError = require("../shared/error");
 
-module.exports = (context, req) => {
-  conn
-    .connect()
-    .then(client => {
-      query(client);
-    })
-    .catch(err => handleError(500, err, context));
+module.exports = async function(context, req) {
+  try {
+    const client = await conn.connect();
+    const database = client.db("crud-serverless-wavy");
 
-  const query = client => {
-    let funcionario = ({
+    const funcionario = ({
       nomeFuncionario,
       cargo,
       numeroIdentificador
     } = context.req.body);
 
-    const database = client.db("crud-serverless-wavy");
-
-    database
+    const res = await database
       .collection("funcionarios")
-      .insertOne({
-        nomeFuncionario: funcionario.nomeFuncionario,
-        cargo: funcionario.cargo,
-        numeroIdentificador: funcionario.numeroIdentificador
-      })
-      .then(res => {
-        context.res = {
-          body: funcionario
-        };
+      .insertOne(funcionario);
+    context.res.json(res);
 
-        context.done();
-      })
-      .catch(err => {
-        context.log("Erro ao criar um novo(a) Funcionário(a)");
-        context.res = {
-          status: 500,
-          body: err.stack
-        };
-
-        context.done();
-      });
-  };
-};
+  } catch (err) {
+    context.log("Erro ao criar um novo(a) Funcionário(a)");
+    return handleError(500, err, context);
+  }
+}

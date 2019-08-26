@@ -11,30 +11,16 @@
 const conn = require("../shared/databaseCosmosDb");
 const handleError = require("../shared/error");
 
-module.exports = context => {
-  conn
-    .connect()
-    .then(client => {
-      query(client);
-    })
-    .catch(err => handleError(500, err, context));
-
-    const query = client => {
+module.exports = async function (context) {
+  try {
+    const client = await conn.connect();
     const database = client.db("crud-serverless-wavy");
-
-    database
-      .collection("funcionarios")
+    const res = await database.collection("funcionarios")
       .find()
-      .toArray()
-      .then(res => {
-        context.log("Retornando todos os funcionários com sucesso!");
-
-        context.res = {
-          status: 200,
-          body: res
-        };
-        context.done();
-      })
-      .catch(err => handleError(500, err.stack, context));
-  };
+      .toArray();
+    context.log("Retornando todos os funcionários com sucesso!");
+    context.res.json(res);
+  } catch (err) {
+    return handleError(500, err, context);
+  }
 };
