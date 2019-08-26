@@ -39,3 +39,4 @@ module.exports = async function(context, req) {
     return handleError(500, err, context);
   }
 };
+

@@ -1,3 +1,1 @@
-{"_id":{"$oid":"5d62e47ba58624385c444397"},"nomeFuncionario":"Glaucia Lemos","cargo":"Regional Cloud Advocate ","numeroIdentificador":"1234"}
-{"_id":{"$oid":"5d62e4d2a58624385c444398"},"nomeFuncionario":"Igor Halfeld","cargo":"Senior Software Engineer","numeroIdentificador":"9876"}
-{"_id":{"$oid":"5d62e507a58624385c444399"},"nomeFuncionario":"Lucas Santos","cargo":"Senior Software Architect","numeroIdentificador":"7654"}
+mongoimport.exe --host crud-serverless-wavy.documents.azure.com:10255 -u crud-serverless-wavy -p JzmEyy7BLDwEnQwr43pTwwsYjGb5jyv6hHjZzMnIorrrmSKROOzMagaJx3PuxLsdxdyC91OpAIRtq4akiT5k3g== --ssl --sslAllowInvalidCertificates --db crud-serverless-wavy --collection funcionarios--file palestrantes.json

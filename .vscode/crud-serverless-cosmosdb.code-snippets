@@ -75,7 +75,7 @@
     ],
     "description": "Snippet arquivo responsável por excluir um 'Funcionário' pelo Id via CosmosDb"
   },
-  "Snippet arquivo responsável por excluir um 'Funcionário' pelo Id via CosmosDb": {
+  "Snippet arquivo responsável por selecionar um 'Funcionário' pelo Id via CosmosDb": {
     "prefix": "cosmos-serverless-listOne",
     "body": [
       "const { ObjectID } = require(\"mongodb\");",
@@ -127,7 +127,7 @@
     ],
     "description": "Snippet arquivo responsável por listar Funcionarios via CosmosDb"
   },
-  "Snippet arquivo responsável por listar Funcionarios via CosmosDb": {
+  "Snippet responsável por atualizar Funcionarios via CosmosDb": {
     "prefix": "cosmos-serverless-update",
     "body": [
       "const { ObjectID } = require(\"mongodb\");",
@@ -162,6 +162,6 @@
       "  }",
       "};"
     ],
-    "description": "Snippet arquivo responsável por listar Funcionarios via CosmosDb"
+    "description": "Snippet responsável por atualizar Funcionarios via CosmosDb"
   }
 }
