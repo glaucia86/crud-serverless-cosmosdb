@@ -1,6 +1,6 @@
 // @ts-nocheck
 /**
- * Arquivo: CreateFuncionario/index.js
+ * Arquivo: GetFuncionarios/index.js
  * Data: 24/08/2019
  * Descrição: arquivo responsável por listar Funcionarios via CosmosDb
  * Author: Glaucia Lemos
