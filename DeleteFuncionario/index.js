@@ -7,6 +7,7 @@
  * Digitar o snippet: cosmos-serverless-delete
  */
 
+const mongodb = require('mongodb');
 const conn = require('../shared/databaseCosmosDb');
 const handleError = require('../shared/error');
 
@@ -21,13 +22,18 @@ module.exports = function(context, req) {
   const query = client => {
     const db = client.db('crud-serverless-wavy');
     db.collection('funcionarios')
-      .findOneAndDelete({ id: context.req.params.id })
+      .findOneAndDelete({ _id: mongodb.ObjectID(context.req.params.id) })
       .then(res => {
-        context.res = {
-          status: 200,
-          body: { message: 'Funcionário excluído com sucesso!' }
-        };
-        context.done();
+        const documentDeleted = res.value;
+        if (documentDeleted) {
+          context.res = {
+            status: 200,
+            body: { message: 'Funcionário excluído com sucesso!' }
+          };
+          context.done();
+        } else {
+          handleError(500, "Document not found", context);
+        }
       })
       .catch(err => handleError(500, err, context));
   };
