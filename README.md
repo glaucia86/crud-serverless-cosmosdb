@@ -82,4 +82,4 @@ Durante o workshop, comentei sobre importantes documentações, links e recursos
 
 ## Dúvidas?! ❗️❗️
 
-Se tiverem alguma dúvida referente ao código desenvolvido ou para configurar o ambiente de desenvolvimento, bastam criar uma **[ISSUE AQUI](https://github.com/glaucia86/crud-serverless-cosmosdb/issues)** no GitHub que estarei respondendo a vocês o mais breve possível!! :D :D
+Se tiverem alguma dúvida referente ao código desenvolvido ou para configurar o ambiente de desenvolvimento, bastam criar uma **[ISSUE AQUI](https://github.com/glaucia86/crud-serverless-cosmosdb/issues)** no GitHub que estarei respondendo a vocês o mais breve possível!!
