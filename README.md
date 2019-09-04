@@ -20,7 +20,7 @@ Caso você seja um(a) estudante de alguma Instituição de Ensino de Faculdade o
 
 ## Sobre a Demo 💻
 
-Aqui ensino como você pode persistir um dado usando o HTTP Trigger, via POST direto no MongoDb local.
+Aqui eu ensino como você pode criar um CRUD no Azure Functions em poucos minutos persistido via CosmosDb.
 
 ## Executando localmente a aplicação
 
