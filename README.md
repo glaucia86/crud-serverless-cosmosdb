@@ -60,11 +60,11 @@ Aqui eu ensino como você pode criar um CRUD no Azure Functions em poucos minuto
 
 Abre o Postman. Agora você poderá:
 
-* Criar um novo 'Funcionário' em: [POST] `http://localhost:7071/api/funcionario` 
+* Criar um novo 'Funcionário' em: [POST] `http://localhost:7071/api/funcionarios` 
 * Listar todos os Funcionários em: [GET] `http://localhost:7071/api/funcionarios` 
-* Listar um Funcionário pelo Id em: [GET] `http://localhost:7071/api/funcionario/{id}` 
-* Atualizar um Funcionário pelo Id em: [PUT] `http://localhost:7071/api/funcionario/{id}` 
-* Excluir um Funcionário pelo Id em: [DELETE] `http://localhost:7071/api/funcionario/{id}` 
+* Listar um Funcionário pelo Id em: [GET] `http://localhost:7071/api/funcionarios/{id}` 
+* Atualizar um Funcionário pelo Id em: [PUT] `http://localhost:7071/api/funcionarios/{id}` 
+* Excluir um Funcionário pelo Id em: [DELETE] `http://localhost:7071/api/funcionarios/{id}` 
 
 ## Links & Recursos Importantes ❗️
 

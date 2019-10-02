@@ -1,0 +1,21 @@
+13/09 -> 22/09
+	Rio -> São Paulo
+	São Paulo -> Rio
+
+27/09 -> São Paulo
+	Rio -> São Paulo
+
+30/09 -> Punta Cana, República Dominicana
+	São Paulo -> Punta Cana
+
+10/10 - San Francisco, Califórnia - USA
+	-> Punta Cana -> Los Angeles, USA
+
+20/10 - Cidade do México, México
+	-> Los Angeles, USA -> Cidade do México
+
+31/10 - Orange County, Florida - USA
+	-> Cidade do México -> Florida, Miami
+
+10/11 - Rio de Janeiro, Brasil
+	-> Florida, Miami -> Rio de Janeiro
