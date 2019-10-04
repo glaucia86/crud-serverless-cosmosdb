@@ -20,7 +20,7 @@ Caso você seja um(a) estudante de alguma Instituição de Ensino de Faculdade o
 
 ## Sobre a Demo 💻
 
-Aqui eu ensino como você pode criar um CRUD no Azure Functions em poucos minutos persistido via CosmosDb.
+Aqui eu ensino como você pode criar um CRUD no Azure Functions em poucos minutos persistindo via CosmosDb.
 
 ## Executando localmente a aplicação
 
